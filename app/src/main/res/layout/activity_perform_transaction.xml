@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    >
+    <LinearLayout
+        android:id="@+id/textt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/UserName_sign"
+            android:fontFamily="@font/amaranth"
+            android:text="Make"
+            android:textColor="#52B610"
+            android:textSize="50dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/txt_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/UserName_sign"
+            android:layout_marginBottom="180dp"
+            android:fontFamily="@font/amaranth"
+            android:text="Transaction"
+            android:textSize="50dp"
+            android:textColor="#F1F4EF">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/sender_account_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:drawableLeft="@drawable/ic_transaction_foreground"
+        android:hint="Sender's AccNo"
+        android:layout_above="@id/receiver_account_edittext"
+        android:textColor="#DDD8D8"
+        android:textColorHint="#DDD8D8">
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/receiver_account_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_transaction_foreground"
+        android:hint="Reciever's AccNo"
+        android:textColorHint="#DDD8D8"
+        android:textColor="@color/white">
+    </EditText>
+
+    <EditText
+        android:id="@+id/amount_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/receiver_account_edittext"
+        android:drawableLeft="@drawable/ic_money_foreground"
+        android:hint="Amount"
+        android:textColorHint="#DDD8D8"
+        android:textColor="@color/white">
+    </EditText>
+    <Button
+        android:id="@+id/btn_perform_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/amount_edittext"
+        android:backgroundTint="@color/white"
+        android:text="Send Money"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold">
+
+    </Button>
+
+</RelativeLayout>

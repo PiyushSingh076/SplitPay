@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/splitpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/login_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="130dp"
+            android:fontFamily="@font/medievalsharp"
+            android:text="Split"
+            android:textColor="#52B610"
+            android:textSize="70dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/login_btn"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="130dp"
+            android:fontFamily="@font/medievalsharp"
+            android:text="PAY"
+            android:textColor="@color/white"
+            android:textSize="65dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/white"
+        android:text="Login"
+        android:textColor="@color/black"
+
+        android:textStyle="bold">
+
+    </Button>
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="SignUp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/login_btn"
+        android:layout_centerInParent="true"
+        >
+    </Button>
+
+
+</RelativeLayout>
